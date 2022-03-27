@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navigation:React.FC = () => {
   return (
@@ -22,9 +23,9 @@ const Navigation:React.FC = () => {
             <div className="collapse navbar-collapse" id="bs-megadropdown-tabs">
               <ul className="nav navbar-nav">
                 <li className="active">
-                  <a href="index.html" className="act">
+                  <Link to="/" className="act">
                     Home
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="dropdown">
