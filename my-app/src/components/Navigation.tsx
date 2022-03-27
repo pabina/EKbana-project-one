@@ -1,43 +1,43 @@
 import React from "react";
 
-const Navigation = () => {
+const Navigation:React.FC = () => {
   return (
     <>
-      <div class="navigation-agileits">
-        <div class="container">
-          <nav class="navbar navbar-default">
-            <div class="navbar-header nav_2">
+      <div className="navigation-agileits">
+        <div className="container">
+          <nav className="navbar navbar-default">
+            <div className="navbar-header nav_2">
               <button
                 type="button"
-                class="navbar-toggle collapsed navbar-toggle1"
+                className="navbar-toggle collapsed navbar-toggle1"
                 data-toggle="collapse"
                 data-target="#bs-megadropdown-tabs"
               >
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                <span className="sr-only">Toggle navigation</span>
+                <span className="icon-bar"></span>
+                <span className="icon-bar"></span>
+                <span className="icon-bar"></span>
               </button>
             </div>
-            <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-              <ul class="nav navbar-nav">
-                <li class="active">
-                  <a href="index.html" class="act">
+            <div className="collapse navbar-collapse" id="bs-megadropdown-tabs">
+              <ul className="nav navbar-nav">
+                <li className="active">
+                  <a href="index.html" className="act">
                     Home
                   </a>
                 </li>
 
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    Groceries<b class="caret"></b>
+                <li className="dropdown">
+                  <a href="#" className="dropdown-toggle" data-toggle="dropdown">
+                    Groceries<b className="caret"></b>
                   </a>
-                  <ul class="dropdown-menu multi-column columns-3">
-                    <div class="row">
-                      <div class="multi-gd-img">
-                        <ul class="multi-column-dropdown">
+                  <ul className="dropdown-menu multi-column columns-3">
+                    <div className="row">
+                      <div className="multi-gd-img">
+                        <ul className="multi-column-dropdown">
                           <h6>All Groceries</h6>
                           <li>
-                            <a href="groceries.html">Dals & Pulses</a>
+                            <a href="groceries.html">Dals and Pulses</a>
                           </li>
                           <li>
                             <a href="groceries.html">Almonds</a>
@@ -52,21 +52,21 @@ const Navigation = () => {
                             <a href="groceries.html"> Mukhwas </a>
                           </li>
                           <li>
-                            <a href="groceries.html">Rice & Rice Products</a>
+                            <a href="groceries.html">Rice and Rice Products</a>
                           </li>
                         </ul>
                       </div>
                     </div>
                   </ul>
                 </li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    Household<b class="caret"></b>
+                <li className="dropdown">
+                  <a href="#" className="dropdown-toggle" data-toggle="dropdown">
+                    Household<b className="caret"></b>
                   </a>
-                  <ul class="dropdown-menu multi-column columns-3">
-                    <div class="row">
-                      <div class="multi-gd-img">
-                        <ul class="multi-column-dropdown">
+                  <ul className="dropdown-menu multi-column columns-3">
+                    <div className="row">
+                      <div className="multi-gd-img">
+                        <ul className="multi-column-dropdown">
                           <h6>All Household</h6>
                           <li>
                             <a href="household.html">Cookware</a>
@@ -91,14 +91,14 @@ const Navigation = () => {
                     </div>
                   </ul>
                 </li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    Personal Care<b class="caret"></b>
+                <li className="dropdown">
+                  <a href="#" className="dropdown-toggle" data-toggle="dropdown">
+                    Personal Care<b className="caret"></b>
                   </a>
-                  <ul class="dropdown-menu multi-column columns-3">
-                    <div class="row">
-                      <div class="multi-gd-img">
-                        <ul class="multi-column-dropdown">
+                  <ul className="dropdown-menu multi-column columns-3">
+                    <div className="row">
+                      <div className="multi-gd-img">
+                        <ul className="multi-column-dropdown">
                           <h6>Baby Care</h6>
                           <li>
                             <a href="personalcare.html">Baby Soap</a>
@@ -109,30 +109,30 @@ const Navigation = () => {
                             </a>
                           </li>
                           <li>
-                            <a href="personalcare.html">Baby Oil & Shampoos</a>
+                            <a href="personalcare.html">Baby Oil and Shampoos</a>
                           </li>
                           <li>
-                            <a href="personalcare.html">Baby Creams & Lotion</a>
+                            <a href="personalcare.html">Baby Creams and Lotion</a>
                           </li>
                           <li>
                             <a href="personalcare.html"> Baby Powder</a>
                           </li>
                           <li>
-                            <a href="personalcare.html">Diapers & Wipes</a>
+                            <a href="personalcare.html">Diapers and Wipes</a>
                           </li>
                         </ul>
                       </div>
                     </div>
                   </ul>
                 </li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    Packaged Foods<b class="caret"></b>
+                <li className="dropdown">
+                  <a href="#" className="dropdown-toggle" data-toggle="dropdown">
+                    Packaged Foods<b className="caret"></b>
                   </a>
-                  <ul class="dropdown-menu multi-column columns-3">
-                    <div class="row">
-                      <div class="multi-gd-img">
-                        <ul class="multi-column-dropdown">
+                  <ul className="dropdown-menu multi-column columns-3">
+                    <div className="row">
+                      <div className="multi-gd-img">
+                        <ul className="multi-column-dropdown">
                           <h6>All Accessories</h6>
                           <li>
                             <a href="packagedfoods.html">Baby Food</a>
@@ -150,22 +150,22 @@ const Navigation = () => {
                             <a href="packagedfoods.html"> Canned Food </a>
                           </li>
                           <li>
-                            <a href="packagedfoods.html">Chocolates & Sweets</a>
+                            <a href="packagedfoods.html">Chocolates and Sweets</a>
                           </li>
                         </ul>
                       </div>
                     </div>
                   </ul>
                 </li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    Beverages<b class="caret"></b>
+                <li className="dropdown">
+                  <a href="#" className="dropdown-toggle" data-toggle="dropdown">
+                    Beverages<b className="caret"></b>
                   </a>
-                  <ul class="dropdown-menu multi-column columns-3">
-                    <div class="row">
-                      <div class="multi-gd-img">
-                        <ul class="multi-column-dropdown">
-                          <h6>Tea & Coeffe</h6>
+                  <ul className="dropdown-menu multi-column columns-3">
+                    <div className="row">
+                      <div className="multi-gd-img">
+                        <ul className="multi-column-dropdown">
+                          <h6>Tea and Coeffe</h6>
                           <li>
                             <a href="beverages.html">Green Tea</a>
                           </li>

@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+
+
+
+
+
 
 const Slider = () => {
   return (
-    <div>
-      <ul id="demo1">
+	  <div>
+	 <ul id="demo1">
 			<li>
 				<img src="assets/images/11.jpg" alt="" />
 				<div className="slide-desc">
@@ -24,8 +29,8 @@ const Slider = () => {
 				</div>
 			</li>
 		</ul>
-    </div>
+    </div> 
   )
 }
 
-export default Slider
+export default Slider;

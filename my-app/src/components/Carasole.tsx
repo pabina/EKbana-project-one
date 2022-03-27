@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Carasole = () => {
+const Carasole:React.FC = () => {
   return (
     <div>
        <div id="myCarousel" className="carousel slide" data-ride="carousel">
@@ -27,6 +27,9 @@ const Carasole = () => {
     
     </div>
     </div>
+
+    //from bootstrap
+   
   )
 }
 

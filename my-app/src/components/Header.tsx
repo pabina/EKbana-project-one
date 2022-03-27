@@ -40,7 +40,7 @@ const Header = () => {
 			</div>
 		<div className="w3l_search">
 			<form action="#" method="post">
-				<input type="search" name="Search" placeholder="Search for a Product..." required="" />
+				<input type="search" name="Search" placeholder="Search for a Product..."  />
 				<button type="submit" className="btn btn-default search" aria-label="Left Align">
 					<i className="fa fa-search" aria-hidden="true"> </i>
 				</button>

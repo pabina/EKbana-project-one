@@ -1,19 +1,26 @@
+
 import React from 'react';
 import Navigation from './Navigation';
 import Slider from './Slider';
 import Brands from './Brands';
 import Carasole from './Carasole';
+import BannerButtom from './BannerButtom';
+import BrandStore from './BrandStore';
+import NewOffer from './NewOffer';
+
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Navigation/>
       <Slider/>
      <Brands/>
      <Carasole/>
-
-    </div>
+    <BannerButtom/>
+    <BrandStore/>
+    <NewOffer/>
+    </>
   )
 }
 
-export default Home
+export default Home;
