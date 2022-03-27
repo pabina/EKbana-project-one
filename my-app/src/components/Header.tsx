@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 const Header = () => {
   return (
@@ -10,8 +11,8 @@ const Header = () => {
 			</div>
 			<div className="agile-login">
 				<ul>
-					<li><a href="registered.html"> Create Account </a></li>
-					<li><a href="login.html">Login</a></li>
+					<li><Link to="/createAccount"> Create Account </Link></li>
+					<li><Link to="/login">Login</Link></li>
 					<li><a href="contact.html">Help</a></li>
 					
 				</ul>
@@ -50,6 +51,7 @@ const Header = () => {
 			
 			<div className="clearfix"> </div>
 		</div>
+		
 	</div>
 
     </>

@@ -7,12 +7,13 @@ import Carasole from './Carasole';
 import BannerButtom from './BannerButtom';
 import BrandStore from './BrandStore';
 import NewOffer from './NewOffer';
+import {BrowserRouter as Router,Routes,Route,Link} from "react-router-dom";
 
 
 const Home = () => {
   return (
     <>
-      <Navigation/>
+     <Navigation/>
       <Slider/>
      <Brands/>
      <Carasole/>
