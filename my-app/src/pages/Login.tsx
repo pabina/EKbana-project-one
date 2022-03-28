@@ -20,8 +20,11 @@ const Login = () => {
 function submit(e:React.FormEvent<EventTarget>){
 		e.preventDefault();
        axios.post(url, {
-	  email:data.email,
+	  
+	  client_secret:data.password,  
+	  username:data.email,
 	  password:data.password,
+	  grant_type:data.password,
 	 
   }).then((res)=>{
 	  console.log(res.data);
@@ -54,8 +57,8 @@ function submit(e:React.FormEvent<EventTarget>){
 		
 			<div className="login-form-grids animated wow slideInUp" data-wow-delay=".5s">
 				<form onSubmit={(e:React.FormEvent<EventTarget>)=>{submit(e)}}>
-					<input type="email" placeholder="Email Address" onChange={(e:React.FormEvent<EventTarget>)=>handle(e)} id="email" value={data.email}    />
-					<input type="password" placeholder="Password" onChange={(e:React.FormEvent<EventTarget>)=>handle(e)} id="password" value={data.password}    />
+					<input type="email" placeholder="Email Address" onChange={(e:React.FormEvent<EventTarget>)=>handle(e)} id="email" value={data.email}   required   />
+					<input type="password" placeholder="Password" onChange={(e:React.FormEvent<EventTarget>)=>handle(e)} id="password" value={data.password} required    />
 					<div className="forgot">
 						<a href="#">Forgot Password?</a>
 					</div>

@@ -10,14 +10,14 @@ import { Register } from '../Model';
 const CreateAccount = () => {
     const navigate=useNavigate();
     const url="https://uat.ordering-boafresh.ekbana.net/api/v4/auth/signup";
+    
     const[data,setData]=useState<Register>({
         fName:"",
         lName:"",
         email:"",
         password:"",
         cpassword:""
-
-    })
+})
     function submit(e:React.FormEvent<EventTarget>){
       e.preventDefault();
 axios.post(url, {
@@ -75,8 +75,8 @@ axios.post(url, {
 			<div className="login-form-grids">
 				<h5>profile information</h5>
 				<form action="#" method="post"  onSubmit={(e:React.FormEvent<EventTarget>)=>{submit(e)}}>
-					<input type="text" placeholder="First Name..."  onChange={(e:React.FormEvent<EventTarget>)=>handle(e)} id="fName" value={data.fName}   />
-					<input type="text" placeholder="Last Name..." onChange={(e:React.FormEvent<EventTarget>)=>handle(e)} id="lName" value={data.lName}  />
+					<input type="text" placeholder="First Name..."  onChange={(e:React.FormEvent<EventTarget>)=>handle(e)} id="fName" value={data.fName}  required  />
+					<input type="text" placeholder="Last Name..." onChange={(e:React.FormEvent<EventTarget>)=>handle(e)} id="lName" value={data.lName} required  />
 				
 				<div className="register-check-box">
 					<div className="check">
@@ -85,9 +85,9 @@ axios.post(url, {
 				</div>
 				<h6>Login information</h6>
 					
-					<input type="email" placeholder="Email Address" onChange={(e:React.FormEvent<EventTarget>)=>handle(e)} id="email" value={data.email} />
-					<input type="password" placeholder="Password" onChange={(e:React.FormEvent<EventTarget>)=>handle(e)} id="password" value={data.password} />
-					<input type="password" placeholder="Password Confirmation" onChange={(e:React.FormEvent<EventTarget>)=>handle(e)} id="cpassword" value={data.cpassword} />
+					<input type="email" placeholder="Email Address" onChange={(e:React.FormEvent<EventTarget>)=>handle(e)} id="email" value={data.email} required />
+					<input type="password" placeholder="Password" onChange={(e:React.FormEvent<EventTarget>)=>handle(e)} id="password" value={data.password} required />
+					<input type="password" placeholder="Password Confirmation" onChange={(e:React.FormEvent<EventTarget>)=>handle(e)} id="cpassword" value={data.cpassword} required />
 					<div className="register-check-box">
 						<div className="check">
 							<label className="checkbox"><input type="checkbox" name="checkbox" /><i> </i>I accept the terms and conditions</label>
